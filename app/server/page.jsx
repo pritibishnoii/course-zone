@@ -21,7 +21,7 @@ const Page = async () => {
             </h1>
             <div className='flex justify-center'><BackButton /></div>
             <div className='flex flex-wrap gap-8 justify-center w-full mx-auto mt-8 '>
-                { users.map( ( user ) => (
+                { users?.map( ( user ) => (
                     <div key={ user.id } className=' bg-transparent border border-gray-500 shadow-md shadow-gray-800 p-8 w-1/4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gray-800'>
                         <h1 className='text-yellow-300 text-xl font-semibold'>{ user.username }</h1>
                         <p>{ user.email }</p>
